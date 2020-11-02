@@ -22,7 +22,7 @@ from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import admin_cmd, load_module, remove_plugin
 
 DELETE_TIMEOUT = 5
-thumb_image_path = "./resources/lol.png"
+thumb_image_path = "./lol.png"
 DEFAULTUSER = "十पार्षद十"
 
 
