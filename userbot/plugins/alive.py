@@ -1,4 +1,8 @@
+from userbot import bot
+
 @telebot.on(admin_cmd(pattern="alive"))
 async def lol(event):
-    await event.edit(f"Hi user, I'm alive and working!")
+    itsme = bot.me
+    name = itsme.first_name
+    await event.edit(f"Hi {name}, I'm alive and working!")
     
