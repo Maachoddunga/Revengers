@@ -109,7 +109,7 @@ def load_module(shortname):
         # support for uniborg
         sys.modules["uniborg.util"] = userbot.utils
         mod.borg = bot
-        mod.userbot = bot
+        mod.telebot = bot
         # auto-load
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
