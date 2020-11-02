@@ -3,7 +3,10 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 
 # Global Variables
+CMD_LIST = {}
 CMD_HELP = {}
+INT_PLUG = ""
+LOAD_PLUG = {}
 
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
