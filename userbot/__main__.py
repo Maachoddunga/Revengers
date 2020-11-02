@@ -1,5 +1,5 @@
 import glob
-from telebot import bot
+from userbot import bot
 from sys import argv
 from telethon import TelegramClient
 from userbot.Config import Var
