@@ -3,7 +3,7 @@ from userbot import bot
 from sys import argv
 from telethon import TelegramClient
 from userbot.Config import Var
-from userbot.utils import load_module, start_mybot
+from userbot.utils import load_module
 from pathlib import Path
 import telethon.utils
 
