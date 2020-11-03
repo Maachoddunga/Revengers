@@ -20,12 +20,11 @@ from datetime import datetime
 from pathlib import Path
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import admin_cmd, load_module, remove_plugin
-from userbot import name
 
 DELETE_TIMEOUT = 5
 thumb_image_path = "./lol.png"
 x = bot.me
-DEFAULTUSER = name if name else "十पार्षद十"
+DEFAULTUSER = "十पार्षद十"
 
 
 @telebot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
