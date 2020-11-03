@@ -10,6 +10,8 @@ import re
 import logging
 import inspect
 
+handler = "\."
+
 def command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
