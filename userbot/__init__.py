@@ -14,6 +14,3 @@ if Var.STRING_SESSION:
 else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
-
-x = bot.me
-name = x.first_name
