@@ -1,7 +1,6 @@
 from userbot.Config import Var
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from userbot import bot
 
 # Global Variables
 CMD_LIST = {}
