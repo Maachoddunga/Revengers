@@ -20,14 +20,15 @@ from datetime import datetime
 from pathlib import Path
 from telethon.tl.types import InputMessagesFilterDocument
 from userbot.utils import admin_cmd, load_module, remove_plugin
+from userbot import name
 
 DELETE_TIMEOUT = 5
 thumb_image_path = "./lol.png"
-DEFAULTUSER = "十पार्षद十"
+x = bot.me
+DEFAULTUSER = name if name else "十पार्षद十"
 
 
 @telebot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@telebot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
@@ -54,7 +55,7 @@ async def send(event):
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.delete()
     else:
-        await edit_or_reply(event, "**404**: __File Not Found__")
+        await edit("**404**: __File Not Found__")
 
 
 @telebot.on(admin_cmd(pattern="install"))
