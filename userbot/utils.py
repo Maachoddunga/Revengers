@@ -112,8 +112,6 @@ def load_module(shortname):
         mod.telebot = bot
         # auto-load
         mod.admin_cmd = admin_cmd
-        mod.edit_or_reply = edit_or_reply
-        mod.eor = eor
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
